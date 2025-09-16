@@ -11,7 +11,7 @@ class Solution {
         } else if (angle == 180) {
             answer = 4;
         } else {
-            new IllegalArgumentException("입력된 값이 맘에 안듭니다.");
+            throw new IllegalArgumentException("입력된 값이 맘에 안듭니다.");
         }
         
         return answer;
