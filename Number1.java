@@ -4,10 +4,3 @@ class Solution {
         return answer;
     }
 }
-
-class Number1 {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.solution(1, 2));
-    }
-}
