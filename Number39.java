@@ -8,4 +8,4 @@ class Solution {
         IntPredicate p = x -> x != minVal;
         return Arrays.stream(arr).filter(p).toArray();
     }
-}
+} 
