@@ -1,3 +1,5 @@
+// 카드를 사용하지 않고 다음 카드로 넘어갈 수 없습니다. 없대.
+
 class Solution {
     public String solution(String[] cards1, String[] cards2, String[] goal) {
         int l = 0;
