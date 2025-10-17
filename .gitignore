@@ -4,4 +4,5 @@ Number.java
 test.py
 *.yml
 *.sh
+*.sql
 Dockerfile
