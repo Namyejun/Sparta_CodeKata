@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Solution {
+public class Number83 {
     public int solution(int k, int[] tangerine) {
         int answer = 0;
         int[] map = new int[10000001];
