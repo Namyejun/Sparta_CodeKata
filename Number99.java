@@ -3,7 +3,7 @@ import java.util.Map;
 
 class Solution {
     public int solution(int[] topping) {
-        int answer = -1;
+        int answer = 0;
         Map<Integer, Integer> l = new HashMap<>();
         Map<Integer, Integer> r = new HashMap<>();
         for (int i = 0; i < topping.length; i++) {
@@ -17,7 +17,11 @@ class Solution {
             r.replace(topping[i], r.get(topping[i]) - 1);
             if (r.get(topping[i]) == 0) r.remove(topping[i]);
 
-            if (l.size() == r.size()) answer += 1;
+            if (l.size() == r.size()) {
+                answer += 1;
+                // l.forEach((k, v) -> System.out.println("l : " + k));
+                // r.forEach((k, v) -> System.out.println("r : " + k));
+            }
         }
         return answer;
     }
