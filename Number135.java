@@ -50,6 +50,7 @@ public class Solution {
 
     for (int i = 10; i <= 40; i += 10) {
       arr[index] = i;
+
       combination(arr, index + 1, users, emoticons);
     }
   }
