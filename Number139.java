@@ -10,15 +10,15 @@ public class Solution {
         int count = 0;
 
         while (deliveryCapacity < deliveries[i] || pickupCapacity < pickups[i]) {
-          deliveryCapacity += cap;
+          deliveryCapacity += cap; // 몇 번 왔다갔다 하는지의 문제랄까요
           pickupCapacity += cap;
           count += 1;
         }
 
-        deliveryCapacity -= deliveries[i];
+        deliveryCapacity -= deliveries[i]; // 왔다갔다 5번 한다고 했을 때 해당 지역에서 픽업하고 배달할 애들은 빼야하죠
         pickupCapacity -= pickups[i];
 
-        answer += ((i + 1) * count * 2);
+        answer += ((i + 1) * count * 2); // 이동 거리
       }
     }
     return answer;
