@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class Midas {
 
     public int solution1(int h, int w, int[] blocks) {
         int k = blocks.length;
